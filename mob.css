@@ -1,0 +1,59 @@
+.mobile-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 0 20px; /* Match tv-board padding */
+}
+
+.mobile-card {
+  display: flex;
+  background-color: rgb(5, 211, 222);
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%; /* Match tv-card */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.mobile-card:hover {
+  transform: scale(1.02); /* Match tv-card hover effect */
+}
+
+.mobile-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover; /* Add to match tv-card img styling */
+}
+
+.mobile-info p {
+  font-family: sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .mobile-card {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobile-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 0 0 15px 0;
+  }
+
+  .mobile-info p {
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    line-height: 1.6;
+  }
+}

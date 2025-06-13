@@ -1,0 +1,51 @@
+.laptop-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.laptop-card {
+    display: flex;
+    background-color: rgb(5, 211, 222);
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.laptop-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.laptop-info p {
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .laptop-card {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .laptop-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    align-self: center;
+    margin: 0 0 15px 0;
+  }
+
+  .laptop-info p {
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    line-height: 1.6;
+  }
+}
