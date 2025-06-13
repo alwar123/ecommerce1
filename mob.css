@@ -23,8 +23,8 @@
 }
 
 .mobile-card img {
-  width: 150px;
-  height: 150px;
+  width: 2000px;
+  height: 170px;
   border-radius: 10px;
   margin-right: 20px;
   object-fit: cover; /* Add to match tv-card img styling */
